@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASA API</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="mock/rocket.png" type="image/x-icon">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header><h1>NASA API</h1></header>
+  <main>
+    <section class="astronomy-picture">
+      <h2>Astronomy picture of the day</h2>
+      <article id="main-picture">
+        </article>
+      </section>
+
+      <!-- DATI DA MARTE -->
+      <section class="mars-container">
+        <div id="mars-today"></div>
+        <div id="mars-data" ></div>
+      </section>
+      
+      <section class="previous-image-container">
+        <h2>Previous images</h2>
+        <div class="pictures-container"> 
+        </div>
+      </section>
+      
+
+      <!-- MODALE -->
+      <div id="picture-details-container">
+        <div class="picture-detail">
+          <button id="close-button">X</button>
+          <h2 id="picture-title"></h2>
+          <img id="picture-img" src="mock/placeholder.webp" alt="">
+          <p id="picture-description"></p>
+          <p id="picture-copyright"></p>
+        </div>
+      </div>
+    </main>
+  </body>
+  </html>
